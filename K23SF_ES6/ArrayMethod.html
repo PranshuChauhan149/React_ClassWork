@@ -1,0 +1,119 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+  </head>
+  <body>
+    <script>
+      // array methods
+      // 1 -> concat ; => merges two array
+      // 2 -> every => check if all element pass a test then give the boolean result
+      // 3 -> filter
+      // 4 -> find
+      // 5 -> forEach
+      // 6 -> Array.from
+      // 7 -> indexOf
+      // 8 -> map;
+      // 9 -> reduce
+      // 10 -> reverse();
+
+      
+      let arr1 = [22, 23, 6, 8];
+      let arr2 = [4, 7, 6, 8];
+
+      // CONCAT
+
+      // let result = arr1.concat(arr2);
+
+      // document.write(result);
+
+      // EVERY
+
+      // const res = arr1.every((ele)=>ele%2==0);
+      // document.write(res)
+
+      // Filter
+
+      // const res2 = arr2.filter((ele)=>ele%2!=0);
+      // document.write(res2);
+
+      // FIND
+
+      // const r = arr1.find((ele)=>ele==2);
+      // document.write(r);
+
+      // ForEach
+
+      // const a = arr1.forEach((ele)=>{
+      //  document.write(ele + " ");
+      // });
+
+      // Array.from
+
+      // const r= Array.from("pranshu");
+      // document.write(r);
+
+      // indexOf
+
+      // const r = arr1.indexOf(6);
+      // document.write(r)
+
+      // map
+
+      // const r = arr1.map((ele)=>{
+      //   document.write(ele*4+ " ")
+      // });
+
+      // reduce
+
+      // const r = arr2.reduce((ele,aur)=>ele+aur,0);
+      // document.write(r);
+
+      // reverse
+
+      // const s = arr1.reverse();
+      // document.write(s);
+
+
+
+  // 1 =>    filter student who pass (marks  > 50 )
+
+  // 2 => create a new marks after adding 5 bouns marks
+  // 3 -> find the frst student who score 90
+  // 4 calclate the total marks of the student 
+  // 5 => paint all congua.. message for every student
+
+
+  const students = [
+  { name: "Pranshu", age: 20, marks: 33 },
+  { name: "Amit", age: 21, marks: 78 },
+  { name: "Riya", age: 19, marks: 40 },
+  { name: "Rahul", age: 22, marks: 88 }
+];
+
+    const res1 =  students.filter((ele)=>ele.marks>50);
+    res1.forEach(element => {
+      document.write(element.marks+ " ");
+    });
+
+    const newMarks = students.map((ele)=>({...ele,marks:ele.marks+5}) )
+
+
+
+    newMarks.forEach(element => {
+      document.write("<br>" +element.marks+ " ");
+    });
+
+    document.write(students.indexOf(90))
+
+
+    
+
+    
+
+    </script>
+
+  </body>
+</html>
