@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+  </head>
+  <body>
+    <script>
+      // const arr1= [10,20,30,40];
+      // let [a,b,c] = arr1;
+      // console.log(a);
+      // console.log(b);
+      // console.log(c);
+
+      // default values
+      //  const arr2 = [100,300];
+      //  const [a1,a2,a3=500] = arr2;
+      //  console.log(a3);
+      //  let x =20 , y = 50;
+      //  [x,y] = [y,x];
+
+      //  console.log(x);
+      //  console.log(y);
+      // const Student = {
+      //   name : "Pranshu",
+      //   age : 40,
+      //   subject : {
+      //     sub1 : "react",
+      //     sub2 : "maths"
+      //   }
+      // }
+      // const {name,age,subject:{sub1,sub2}} = Student;
+
+      // console.log(name);
+      // console.log(age);
+      // console.log(sub1);
+      // console.log(sub2);
+
+      // The spread operator (...) is a feature in JavaScript (ES6) that allows you to expand (spread out) elements of an array, object, or iterable into individual elements.
+
+      // const arr1 = [1, 2, 3];
+      // const arr2 = [4, 5];
+
+      // const c = [...arr1, ...arr2];
+      // console.log(c);
+      // const a= [3,5,6,7,8,98];
+      // const newArr = [...a,5,6];
+      // newArr.push(4);
+      // console.log(newArr);
+
+      // function sum(a,b,c){
+      //   return a+b+c;
+      // }
+
+      // const arr22 = [1,2,3,4,5];
+      // console.log(sum(...arr22));
+
+      const Student = {
+        name: "Pranshu",
+        age: 40,
+        subject: {
+          sub1: "react",
+          sub2: "maths",
+        },
+      };
+
+      const st = { ...Student };
+      document.write(JSON.stringify(st));
+
+      // rest => its collects multiples ele into a single array
+
+      function add(...num) {
+        return num.reduce((ele, c) => ele + c, 0);
+      }
+      const a = [3, 5, 7, 8, 9, 0];
+      document.write(add(...a));
+    </script>
+  </body>
+</html>
