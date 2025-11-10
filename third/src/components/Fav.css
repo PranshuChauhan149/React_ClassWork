@@ -1,0 +1,29 @@
+
+.heading  {
+  font-style: initial;
+  font-size: x-large; 
+}
+.con{
+  display: flex;
+  gap: 10px;
+  margin-top:5px;
+  
+
+
+}
+.in{
+  background-color: aqua;
+  padding: 10px;
+  border-radius: 20px;
+  
+}
+.main{
+  height: 200px;
+  width: 500px; 
+  display: flex ;
+
+  justify-items: center;
+  align-items: center;
+  flex-direction: column;
+  background-color: antiquewhite;
+}
