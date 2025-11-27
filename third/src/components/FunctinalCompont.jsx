@@ -9,9 +9,7 @@ const FunctinalCompont = () => {
 
   const handleInput = (e) => {
     const { name, value } = e.target;
-    setStudent({
-      [name]: value,
-    });
+    setStudent((prev) => ({ ...prev, [name]: value }));
   };
 
   const ohsubmit = (e) => {
