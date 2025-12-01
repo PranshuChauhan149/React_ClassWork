@@ -2,13 +2,15 @@ import s from "./App.module.css";
 import { useState } from "react";
 import ControllerCompunt from "./components/controllerCompunt";
 import FunctinalCompont from "./components/FunctinalCompont";
+import Formvalidation from "./components/FormValidation";
+import HttpRequest from "./components/HttpRequest";
 
 function Toggle() {
   const [status, setStatus] = useState(false);
 
   return (
     <div>
-      <p className={s.head}>
+      {/* <p className={s.head}>
         {status ? "OFF" : "ON"}
       </p>
 
@@ -21,7 +23,9 @@ function Toggle() {
         {status ? "ON" : "OFF"}
       </button>
       <ControllerCompunt/>
-<FunctinalCompont/>
+<FunctinalCompont/> */}
+{/* <Formvalidation/> */}
+<HttpRequest/>
     </div>
   );
 }
