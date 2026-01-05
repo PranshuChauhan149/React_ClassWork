@@ -4,6 +4,7 @@ import ControllerCompunt from "./components/controllerCompunt";
 import FunctinalCompont from "./components/FunctinalCompont";
 import Formvalidation from "./components/FormValidation";
 import HttpRequest from "./components/HttpRequest";
+import Practice from "./components/Practice";
 
 function Toggle() {
   const [status, setStatus] = useState(false);
@@ -25,7 +26,8 @@ function Toggle() {
       <ControllerCompunt/>
 <FunctinalCompont/> */}
 {/* <Formvalidation/> */}
-<HttpRequest/>
+{/* <HttpRequest/> */}
+<Practice/>
     </div>
   );
 }
